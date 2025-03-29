@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica CSS</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        header{
+            display: inline-block;
+            background-color:rgb(23, 224, 234);
+            color: black;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav ul{
+            display: flex;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li{
+            display: inline-block;
+            margin-right: 20px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color:rgb(51, 49, 49);
+            transition: all 0.5s ease;
+        }
+        nav ul li a:hover{
+            color:rgb(17, 0, 255)
+        }
+        .padre{
+            padding: 20px;
+            display: inline-block;
+        }
+        .c1{
+            display: inline-block;
+            margin-left: 70px;
+            margin-top: 50px;
+            width: 25%;
+            height: auto;
+            font-size: 14px;
+            border: 2px solid rgba(212, 212, 212, 0.5);
+            border-radius: 20px;
+            transition: all 0.5s ease;
+        }
+        .c1:hover{
+            transform: scale(1.1);
+        }
+        #mont{
+            width:100%;
+            height:250px;
+            border-radius:8px;
+        }
+        #tituloc1{
+            padding-left: 5px;
+        }
+        #p1{
+            padding: 5px;
+            font-size:16px;
+        }
+        .bosque{
+            display: inline-block;
+            margin-left: 70px;
+            margin-top: 50px;
+            width: 25%;
+            height: auto;
+            font-size: 14px;
+            border: 2px solid rgba(212, 212, 212, 0.5);
+            border-radius: 20px;
+            transition: all 0.5s ease;
+        }
+        .bosque:hover{
+            transform: scale(1.1);
+        }
+        #bos{
+            width:100%;
+            height:250px;
+            border-radius:8px;
+        }
+        #titulobos{
+            padding-left: 5px;
+        }
+        #p2{
+            padding: 5px;
+            font-size:16px;
+        }
+        .cp{
+            display: inline-block;
+            margin-left: 70px;
+            margin-top: 50px;
+            width: 25%;
+            height: auto;
+            font-size: 14px;
+            border: 2px solid rgba(212, 212, 212, 0.5);
+            border-radius: 20px;
+            transition: all 0.5s ease;
+        }
+        .cp:hover{
+            transform: scale(1.1);
+        }
+        #cos{
+            width:100%;
+            height:270px;
+            border-radius:8px;
+        }
+        #titulocp{
+            padding-left: 5px;
+        }
+        #p3{
+            padding: 5px;
+            font-size:16px;
+        }
+        table{
+            width: 80%;
+            margin: 40px auto;
+            text-align: left;
+            box-shadow: 1px 1px 3px black;
+            border-collapse: collapse;
+            border-radius: 5px;
+        }
+        td{
+            padding: 10px;
+            border-bottom: 1px solid rgb(238, 229, 229);
+        }
+        .th{
+            background-color: rgb(19, 160, 179);
+            color: white;
+        }
+        th{
+            padding: 10px;
+            border-bottom: 1px solid rgb(189, 168, 168);
+        }
+       
+       
+        tr{
+            transition: all 0.5s ease;
+        }
+        tr:hover{
+            background-color: rgb(147, 138, 138);
+            
+        }
+        
+        .th{
+            transition: all 0.5s ease;
+        }
+        .th:hover{
+            background-color: white;
+            color: black;
+        }
+
+
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Viajes y Naturaleza</h1>
+        <nav>
+            <ul>
+                <li><a href="">Inicio</a></li>
+                <li><a href="">Galeria</a></li>
+                <li><a href="">Destinos</a></li>
+                <li><a href="">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="padre">
+        <div class="c1">
+            <img id="mont" src="https://cdn0.geoenciclopedia.com/es/posts/8/0/0/montanas_8_600.jpg">
+            <h1 id="tituloc1">Paisajes de Montañas</h1>
+            <p id="p1">Impresionantes vistas de cordilleras y picos nevados</p>
+        </div>
+        <div class="bosque">
+            <img id="bos" src="https://plus.unsplash.com/premium_photo-1673697240073-04416dc18ab3?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Ym9zcXVlJTIwbWlzdGVyaW9zb3xlbnwwfHwwfHx8MA%3D%3D">
+            <h1 id="titulobos">Bosques Misteriosos</h1>
+            <p id="p2">Explorando la tranquilidad de los bosquez antiguos</p>
+        </div>
+        <div class="cp">
+            <img id="cos" src="https://res.cloudinary.com/worldpackers/image/upload/c_limit,f_auto,q_auto,w_1140/vfwswe246nyy2fd3v8kt">
+            <h1 id="titulocp">Costas Paradisiacas</h1>
+            <p id="p3">Playas de arena blanca y agua cristalina</p>
+        </div>
+        <table>
+            <tr class="th">
+                <th>Destino</th>
+                <th>País</th>
+                <th>Dificultad</th>
+                <th>Temporada Recomendada</th>
+            </tr>
+            <tr>
+                <td>Machu-Pichu</td>
+                <td>Perú</td>
+                <td>Alta</td>
+                <td>Mayo-Septiembre</td>
+            </tr>
+            <tr>
+                <td>Glaciares de Patagonia</td>
+                <td>Argentina</td>
+                <td>Medio</td>
+                <td>Febrero</td>
+            </tr>
+            <tr>
+                <td>Islas Galápagos</td>
+                <td>Ecuador</td>
+                <td>Baja</td>
+                <td>Todo el año</td>
+            </tr>
+            <tr>
+                <td>Torres del Paine</td>
+                <td>Chile</td>
+                <td>Alta</td>
+                <td>Noviembre-Marzo</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
